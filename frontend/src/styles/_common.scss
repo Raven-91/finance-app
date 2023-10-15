@@ -1,0 +1,400 @@
+@import 'colors';
+@import 'fonts';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $backgroundColor;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px;
+  color: $mainTextColor;
+  position: relative;
+}
+
+.big-title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: $menuItemColor;
+}
+
+.sub-title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  color: $subTitleColor;
+}
+
+.main {
+
+  &__navbar {
+    flex: 0 1 219px;
+  }
+
+  &__content {
+    flex: 1 1 auto;
+  }
+}
+
+.navbar {
+
+  &__logo {
+    padding: 40px 0 20px;
+    margin: 0 auto;
+    flex: 0 1 auto;
+  }
+
+  &__nav {
+    padding: 60px 20px 20px;
+    flex: 1 1 auto;
+  }
+
+  &__profile {
+    padding: 20px 0 40px;
+    flex: 0 1 auto;
+
+    & .btn.show {
+      border-radius: 5px;
+      border: 1px solid $menuItemColor !important;
+    }
+  }
+}
+
+.logo {
+  &__link {
+  }
+
+  &__image {
+    max-width: 98px;
+  }
+}
+
+.menu {
+
+  &__list {
+    //flex: 1000 1 auto;
+  }
+
+  &__item {
+    padding: 12px 10px 12px 16px;
+
+    &:hover {
+      background: $sumColor;
+      border-radius: 5px;
+
+      .menu__link,
+      .menu__link .btn span {
+        color: $backgroundColor;
+
+        & svg path {
+          fill: $backgroundColor;
+        }
+      }
+    }
+  }
+
+  &__link {
+    gap: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $menuItemColor;
+  }
+
+  &__balance {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: $menuItemColor;
+
+    span {
+      color: $sumColor;
+      margin-left: 10px;
+    }
+  }
+}
+
+.menu__item.discovered {
+  padding: 0 !important;
+
+  & .btn {
+    background: $backgroundColor;
+    padding: 12px 10px 12px 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: $menuItemColor;
+
+    &:hover {
+      background: $sumColor;
+      color: $backgroundColor;
+
+      path {
+        fill: $backgroundColor !important;
+      }
+    }
+  }
+}
+
+.collapse {
+
+  &__item {
+    padding: 12px 10px 12px 16px;
+    background: $backgroundColor;
+    border-top: 1px solid $sumColor !important;
+    border-left: 1px solid $sumColor !important;
+    border-right: 1px solid $sumColor !important;
+
+    &:last-child {
+      border-radius: 0 0 5px 5px !important;
+      border-bottom: 1px solid $sumColor !important;;
+    }
+
+    &:hover {
+      background: $sumColor;
+
+      .collapse__link {
+        color: $borderColor
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $sumColor;
+  }
+}
+
+.btn-toggle[aria-expanded="true"] {
+  background: $sumColor !important;
+  color: $backgroundColor !important;
+  border-radius: 5px 5px 0 0 !important;
+
+  & svg {
+    transition: all 0.3s ease;
+    transform: rotate(90deg);
+
+    & path {
+      fill: $backgroundColor !important;
+    }
+  }
+}
+
+.user-profile {
+
+  &__name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $menuItemColor;
+  }
+}
+
+.dropdown-toggle {
+  gap: 16px;
+
+  &::after {
+    content: "";
+    display: none !important;
+  }
+}
+
+.content {
+  padding: 100px 60px 96px 60px;
+
+  &__container {
+    //max-width: 1101px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  // .content__positions-list
+  &__positions-list {
+    gap: 20px;
+  }
+
+  // .content__results
+  &__results {
+    gap: 40px;
+  }
+}
+
+.position-item {
+  width: 352px;
+  border-color: $borderColor2;
+  border-radius: 12px !important;
+  padding: 20px;
+
+  // .position-item__title
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  // .position-item__buttons
+  &__buttons {
+    gap: 10px;
+  }
+
+  // .position-item__button
+  &__button {
+  }
+
+  &.new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 352px;
+    height: 123px;
+
+    & svg {
+      cursor: pointer;
+    }
+  }
+}
+
+.buttons-group {
+  gap: 12px;
+
+  // .buttons-group__item
+  &__item {
+    padding: 10px 15px !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 16px !important;
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.45);
+  display: none;
+
+  // .popup__wrapper
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  // .popup__content
+  &__content {
+    max-width: 530px;
+    padding: 40px;
+    background: $backgroundColor;
+    border: 1px solid $borderColor2;
+    border-radius: 12px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  // .popup__text
+  &__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: $subTitleColor;
+  }
+}
+
+.correction {
+
+  // .correction__inputs-list
+  &__inputs-list {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  // .correction__input
+  &__input {
+    max-width: 397px;
+    padding: 7px 16px !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 24px !important;
+    color: $mainTextColor;
+
+    &::placeholder {
+      color: $placeholderTextColor;
+    }
+  }
+}
+
+.time-period {
+
+  // .time-period__item
+  &__item {
+    margin-right: 20px;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 19px !important;
+    letter-spacing: 0.45px !important;
+    color: $placeholderTextColor !important;
+    padding: 9px 12px !important;
+    box-sizing: border-box;
+    width: 100px;
+    height: 37px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: $placeholderTextColor !important;
+      color: $backgroundColor !important;
+    }
+  }
+
+  // .time-period__dates
+  &__dates {
+    gap: 27px;
+  }
+}
+
+.dates {
+  // .dates__item
+  &__item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.45px;
+    color: $mainTextColor;
+  }
+
+  //.dates__date
+  &__date {
+    margin-left: 17px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    width: 100px;
+    text-align: center;
+    color: $mainTextColor;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: $placeholderTextColor;
+      text-align: center;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+#exit {
+  cursor: pointer;
+}
+

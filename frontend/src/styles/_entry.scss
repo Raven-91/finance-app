@@ -1,0 +1,49 @@
+@import 'colors';
+
+.entry-page .big-title {
+  margin: 60px 0 20px;
+}
+
+.form {
+  max-width: 397px;
+}
+
+.form-input-container,
+.form-btn {
+  margin-bottom: 10px;
+}
+
+.form-input {
+  height: 38px !important;
+  padding: 20px 7px 7px !important;
+}
+
+.form-input, .form-label, .form-input::placeholder {
+  font-weight: 400 !important;
+  font-size: 15px !important;
+}
+
+.form-label {
+  color: $placeholderTextColor !important;
+  padding: 7px !important;
+}
+
+.form-check-label {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.form-btn {
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  line-height: 1 !important;
+  color: $backgroundColor !important;
+  padding: 11px 15px !important;
+  margin-top: 20px !important;
+}
+
+.form-link-reg {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}

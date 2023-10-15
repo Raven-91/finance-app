@@ -1,0 +1,180 @@
+@import 'colors';
+
+.content {
+
+  //content__time-period
+  &__time-period {
+    margin: 60px 0 140px 0;
+  }
+}
+
+.graphs {
+  gap: 84px;
+  justify-content: center;
+
+  // .graphs__item
+  &__item {
+    max-width: 437px;
+  }
+
+  // .graphs__share-line
+  &__share-line {
+    width: 1px;
+    height: 450px;
+    background: $borderColor;
+  }
+}
+
+.graph {
+  // .graph__title
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  // .graph__info
+  &__info {
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+}
+
+.info-graph {
+
+  // .info-graph__item
+  &__item {
+    gap: 10px;
+  }
+
+  // .info-graph__item-color
+  &__item-color {
+    width: 35px;
+    height: 10px;
+    background: #DC3545;
+  }
+
+  // .info-graph__item-text
+  &__item-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: $mainTextColor;
+  }
+}
+
+.table {
+
+  // .table__thead
+  &__thead-cell {
+    line-height: 19px;
+    letter-spacing: 1.3px;
+    color: $menuItemColor;
+
+    &.table__cell {
+      font-weight: 700;
+      padding: 15px !important;
+    }
+  }
+
+  // .table__range
+  &__range {
+  }
+
+  // .table__thead-cell
+  &__thead-cell {
+  }
+
+  // .table__cell
+  &__cell {
+    font-weight: 400;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  // .table__thead-cell-1
+  &__thead-cell-1 {
+    width: 145px;
+  }
+
+  // .table__thead-cell-2
+  &__thead-cell-2 {
+    width: 120px;
+  }
+
+  // .table__thead-cell-3
+  &__thead-cell-3 {
+    width: 190px;
+  }
+
+  // .table__thead-cell-4
+  &__thead-cell-4 {
+    width: 120px;
+  }
+
+  // .table__thead-cell-5
+  &__thead-cell-5 {
+    width: 180px;
+  }
+
+  // .table__thead-cell-6
+  &__thead-cell-6 {
+    width: 240px;
+  }
+
+  // .table__thead-cell-7
+  &__thead-cell-7 {
+    width: 89px;
+  }
+
+  // .table__body
+  &__body {
+  }
+
+  // .table__tbody-cell
+  &__tbody-cell {
+    line-height: 23px;
+    color: $mainTextColor;
+    padding: 13px !important;
+
+    &.table__tbody-cell-1 {
+      font-weight: 700 !important;
+    }
+  }
+
+  // .table__tbody-cell-1
+  &__tbody-cell-1 {
+  }
+
+  // .table__tbody-cell-2
+  &__tbody-cell-2 {
+  }
+
+  // .table__tbody-cell-3
+  &__tbody-cell-3 {
+  }
+
+  // .table__tbody-cell-4
+  &__tbody-cell-4 {
+  }
+
+  // .table__tbody-cell-5
+  &__tbody-cell-5 {
+  }
+
+  // .table__tbody-cell-6
+  &__tbody-cell-6 {
+  }
+
+  // .table__tbody-cell-7
+  &__tbody-cell-7 {
+    text-align: end !important;
+
+    & svg {
+      margin-right: 10px;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
